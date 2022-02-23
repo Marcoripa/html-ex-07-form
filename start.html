@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+
+<body>
+	<form action="url" method="GET">
+		<h1>Registration form</h1>
+		<h2>Please complete the following form:</h2>
+		<hr>
+		<!-- Personal data -->
+		<section>
+			<label for="email">What's your email address?</label>
+			<input id="email" name="email" type="email" value="type your email address here">
+            
+			<label for="password">Choose a very cryptic password:</label>
+			<input id="password" name="password" type="password">
+
+			<label for="name">What's your name?</label>
+			<input id="name" name="name" type="text" value="I am Marco">
+
+			<label for="surname">And your family name too</label>
+			<input id="surname" name="surname" type="text" value="Ripa">
+
+			<label for="dob">Select your date of birth</label>
+			<input id="dob" name="dob" type="date" value="1991-12-15" max="2020-01-01">
+
+			<label for="phone">And a phone number...</label>
+			<input id="phone" name="phone" type="text" minlength="10" maxlength="10">	
+		</section>
+		<hr>
+		<!-- Contract plan -->
+		<section>
+		  <h2>Join us</h2>
+			<ul>
+				<li>
+					<label for="free-plan">Free Plan</label>
+				    <input id="free-plan" name="plan" type="checkbox">
+				</li>
+				<li>
+					<label for="cheap-plan">10$/week</label>
+				    <input id="cheap-plan" name="plan" type="checkbox">
+				</li>
+				<li>
+					<label for="medium-plan">20$/week</label>
+				    <input id="medium-plan" name="plan" type="checkbox" checked>
+				</li>
+				<li>
+					<label for="expensive-plan">50$/week</label>
+				    <input id="expensive-plan" name="plan" type="checkbox">
+				</li>
+			</ul>
+		
+
+		  <h3>With pro is better</h3>
+		  <label for="yes">Of course I want Pro!</label>
+		  <input id="yes" name="pro" type="radio" checked>
+
+		  <label for="no">Nah, I like to suffer</label>
+		  <input id="no" name="pro" type="radio">
+	    </section>
+		<hr>
+		<!-- Payment details  -->
+		<section>
+			<h2>We need to ask for some money now</h2>
+			<label for="card-name">Name like written on the card</label>
+			<input id="card-name" name="payment" type="text" value="Mr John Brown">
+
+			<label for="card-number">16 digits number like appears on your card</label>
+			<input id="card-number" name="payment" type="text" minlength="16" maxlength="16">
+
+			<label for="card-cvc">CVC like appears on the back of your card</label>
+			<input id="card-cvc" name="payment" type="text" minlength="3" maxlength="3" >
+
+			<label for="expire-date">Expiration date</label>
+			<input id="expire-date" name="payment" type="date">
+
+			<label for="invoice">Invoice shipping address</label>
+			<input id="invoice" name="payment" type="address">
+		</section>
+
+	</form>
+</body>
+
+</html>
