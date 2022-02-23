@@ -41,52 +41,54 @@
 		<hr>
 		<!-- Contract plan -->
 		<section>
+                 <div>			
 		  <h2>Join us</h2>
 			<ul>
 				<li>
 					<label for="free-plan">Free Plan</label>
-				    <input id="free-plan" name="plan" type="checkbox">
+				    <input id="free-plan" name="plan0" type="checkbox">
 				</li>
 				<li>
 					<label for="cheap-plan">10$/week</label>
-				    <input id="cheap-plan" name="plan" type="checkbox">
+				    <input id="cheap-plan" name="plan1" type="checkbox">
 				</li>
 				<li>
 					<label for="medium-plan">20$/week</label>
-				    <input id="medium-plan" name="plan" type="checkbox" checked>
+				    <input id="medium-plan" name="plan2" type="checkbox" checked>
 				</li>
 				<li>
 					<label for="expensive-plan">50$/week</label>
-				    <input id="expensive-plan" name="plan" type="checkbox">
+				    <input id="expensive-plan" name="plan3" type="checkbox">
 				</li>
 			</ul>
-		
+	          </div>
+		  <div>	
+		   <h3>With pro is better</h3>
+		   <label for="yes">Of course I want Pro!</label>
+		   <input id="yes" name="pro-yes" type="radio" checked>
 
-		  <h3>With pro is better</h3>
-		  <label for="yes">Of course I want Pro!</label>
-		  <input id="yes" name="pro" type="radio" checked>
-
-		  <label for="no">Nah, I like to suffer</label>
-		  <input id="no" name="pro" type="radio">
+		   <label for="no">Nah, I like to suffer</label>
+		   <input id="no" name="pro-no" type="radio">
+		  </div>	    
 	    </section>
 		<hr>
 		<!-- Payment details  -->
 		<section>
 			<h2>We need to ask for some money now</h2>
 			<label for="card-name">Name like written on the card</label>
-			<input id="card-name" name="payment" type="text" value="Mr John Brown">
+			<input id="card-name" name="card-name" type="text" value="Mr John Brown">
 
 			<label for="card-number">16 digits number like appears on your card</label>
-			<input id="card-number" name="payment" type="text" minlength="16" maxlength="16">
+			<input id="card-number" name="card-number" type="text" minlength="16" maxlength="16">
 
 			<label for="card-cvc">CVC like appears on the back of your card</label>
-			<input id="card-cvc" name="payment" type="text" minlength="3" maxlength="3" >
+			<input id="card-cvc" name="card-cvc" type="text" minlength="3" maxlength="3" >
 
 			<label for="expire-date">Expiration date</label>
-			<input id="expire-date" name="payment" type="date">
+			<input id="expire-date" name="expire-date" type="date">
 
 			<label for="invoice">Invoice shipping address</label>
-			<input id="invoice" name="payment" type="address">
+			<input id="invoice" name="invoice" type="text">
 		</section>
 
 	</form>
