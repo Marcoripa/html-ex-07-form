@@ -74,19 +74,19 @@
 		<section>
 			<h2>We need to ask for some money now</h2>
 			<label for="card-name">Name like written on the card</label>
-			<input id="card-name" name="payment" type="text" value="Mr John Brown">
+			<input id="card-name" name="card-name" type="text" value="Mr John Brown">
 
 			<label for="card-number">16 digits number like appears on your card</label>
-			<input id="card-number" name="payment" type="text" minlength="16" maxlength="16">
+			<input id="card-number" name="card-number" type="text" pattern=".[0-9]{16}">
 
 			<label for="card-cvc">CVC like appears on the back of your card</label>
-			<input id="card-cvc" name="payment" type="text" minlength="3" maxlength="3" >
+			<input id="card-cvc" name="card-cvc" type="text" pattern=".[0-9]{3}" >
 
 			<label for="expire-date">Expiration date</label>
-			<input id="expire-date" name="payment" type="date">
+			<input id="expire-date" name="expire-date" type="date">
 
 			<label for="invoice">Invoice shipping address</label>
-			<input id="invoice" name="payment" type="address">
+			<input id="invoice" name="invoice" type="text">
 		</section>
 
 	</form>
